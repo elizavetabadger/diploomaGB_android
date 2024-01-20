@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+        <Button
+            android:id="@+id/btnAddIncome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editTextIncome"
+            android:text="Добавить доход"
+            android:layout_marginTop="25dp"
+            android:layout_centerHorizontal="true"/>
+
+        <EditText
+            android:id="@+id/editTextIncome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:hint="Введите сумму дохода"
+            android:inputType="numberDecimal" />
+
+        <Button
+            android:id="@+id/btnAddExpense"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editTextExpense"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"
+            android:text="Добавить расход" />
+
+        <EditText
+            android:id="@+id/editTextExpense"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btnAddIncome"
+            android:layout_marginTop="14dp"
+            android:hint="Введите сумму расхода"
+            android:inputType="numberDecimal" />
+
+        <Button
+            android:id="@+id/btnShowBalance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Показать баланс"
+            android:layout_below="@id/btnAddExpense"
+            android:layout_marginTop="35dp"
+            android:layout_centerHorizontal="true"/>
+
+        <TextView
+            android:id="@+id/textViewBalance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btnShowBalance"
+            android:layout_marginTop="16dp"
+            android:layout_centerHorizontal="true"
+            android:textSize="20sp"
+            android:text="Баланс: 0"/>
+
+</RelativeLayout>
