@@ -8,11 +8,8 @@ import android.widget.Button;
 import android.widget.Toast;
 import android.widget.EditText;
 import android.widget.TextView;
-import java.sql.*;
 
 public class MainActivity extends AppCompatActivity {
-
-    private Connection connection;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
